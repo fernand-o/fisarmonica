@@ -65,3 +65,12 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "xml_data_extractor", "~> 0.7.0"
+
+gem "rspec", "~> 3.12"
+
+# Run against this stable release
+group :development, :test do
+  gem 'rspec-rails', '~> 6.1.0'
+end
