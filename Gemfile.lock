@@ -101,6 +101,7 @@ GEM
       reline (>= 0.3.8)
     diff-lcs (1.5.0)
     domain_name (0.6.20240107)
+    dotenv (2.8.1)
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
@@ -295,6 +296,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  dotenv
   factory_bot (~> 6.4)
   factory_bot_rails
   importmap-rails

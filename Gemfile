@@ -75,6 +75,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.1.0'
   gem 'factory_bot_rails'
   gem "factory_bot", "~> 6.4"
+  gem 'dotenv'
 end
 
 gem "mechanize", "~> 2.10"
