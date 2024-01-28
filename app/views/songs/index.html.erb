@@ -1,0 +1,21 @@
+<div class="flex-col">
+  <span class="text-white">Aviso: Esse site apenas possibilita uma busca mais fácil das video aulas da fisarmonica.com.br, todos os links aqui enviam para a plataforma. Obviamente você precisa estar logado para acessá-los.</span>
+  <br>
+  <br>
+  <br>
+  <span class="text-2xl text-white">Repertório de vídeo-aulas de acordeon da Fisarmonica</span>
+
+  <%= form_with(url: songs_path, method: :get, data: { turbo_frame: "songs" }) do |form| %>
+    <%= form.label :query, "Buscar por música ou artista:", class: "block mb-2 text-white" %>
+    <div class="flex space-x-3">
+      <%= form.text_field :q, class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none bg-gray-300" %>
+
+      <%= form.submit 'Buscar', class: "px-4 py-3 font-medium
+    bg-orange-300 text-neutal-900 rounded flex items-center cursor-pointer hover:bg-orange-400 focus:ring-4 ring-0 focus:ring-orange-100" %>
+    </div>
+  <% end %>
+
+  <div class="my-6">
+    <%= render "songs", songs: @songs %>
+  </div>
+</div>
