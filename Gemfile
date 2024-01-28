@@ -79,3 +79,4 @@ group :development, :test do
 end
 
 gem "mechanize", "~> 2.10"
+gem "tailwindcss-rails", "~> 2.3"
