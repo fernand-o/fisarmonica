@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   def index
     if params[:q].present?
-      @songs = Song.where('title LIKE ?', "%#{params[:q]}%")
+      @songs = Song.where('title ILIKE ?', "%#{params[:q]}%")
     else
       @songs = Song.all
     end

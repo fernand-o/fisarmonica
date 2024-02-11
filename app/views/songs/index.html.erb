@@ -5,11 +5,12 @@
   <br>
   <span class="text-2xl text-white">Repertório de vídeo-aulas de acordeon da Fisarmonica</span>
 
-  <%= form_with(url: songs_path, method: :get, data: { turbo_frame: "songs", turbo_action: "advance" }) do |form| %>
+  <%= form_with(url: songs_path, method: :get, data: { controller: "search-form", turbo_frame: "songs", turbo_action: "advance" }) do |form| %>
     <%= form.label :query, "Buscar por música ou artista:", class: "block mb-2 text-white" %>
     <div class="flex space-x-3">
       <%= form.text_field :q, 
         value: params[:q],
+        data: { action: "input->search-form#search" },
         class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none bg-gray-300" %>
 
       <%= form.submit 'Buscar', class: "px-4 py-3 font-medium
