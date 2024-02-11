@@ -1,10 +1,14 @@
-<div class="flex-col">
-  <span class="text-white">Aviso: Esse site apenas possibilita uma busca mais fácil das video aulas da fisarmonica.com.br, todos os links aqui enviam para a plataforma. Obviamente você precisa estar logado para acessá-los.</span>
-  <br>
-  <br>
-  <br>
-  <span class="text-2xl text-white">Repertório de vídeo-aulas de acordeon da Fisarmonica</span>
+<a target="_blank" href="https://github.com/fernand-o/fisarmonica" class="fixed top-0 right-0 flex items-center bg-gray-800 text-white py-2 px-4 m-4 rounded-lg">
+  <%= image_tag("github-mark-white.png", alt: "Project Link", class:"w-4 h-4 mr-2") %>
+  <span>Link do projeto</span>
+</a>
 
+<div class="flex-col">
+  <span class="text-2xl text-white">Repertório de vídeo-aulas de acordeon da Fisarmonica.online</span>
+  <br>
+  <span class="text-white">Aviso: Esse site apenas possibilita uma busca mais fácil das video aulas da fisarmonica.com.br, todos os links aqui enviam para a plataforma. Você precisa estar logado para acessá-los.</span>
+  <br>
+  <br>
   <%= form_with(url: songs_path, method: :get, data: { controller: "search-form", turbo_frame: "songs", turbo_action: "advance" }) do |form| %>
     <%= form.label :query, "Buscar por música ou artista:", class: "block mb-2 text-white" %>
     <div class="flex space-x-3">
