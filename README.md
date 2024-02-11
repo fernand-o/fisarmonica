@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O conteúdo de aulas de acordeon da [Fisarmonica cursos](https://fisarmonica.online/) é excelente, já o portal em si é péssimo, super lento e sem uma busca por música.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Esse projeto faz um scrapping de todas as video-aulas de acordeon e disponibiliza uma busca mais amigável: [fisarmonica.fly.dev](https://fisarmonica.fly.dev)
